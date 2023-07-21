@@ -522,16 +522,12 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mt-24 {
-  margin-top: 6rem;
+.mt-3 {
+  margin-top: 0.75rem;
 }
 
 .flex {
   display: flex;
-}
-
-.flex-row {
-  flex-direction: row;
 }
 
 .flex-col {
@@ -546,32 +542,35 @@ video {
   justify-content: center;
 }
 
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
 
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+.bg-yellow-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(202 138 4 / var(--tw-bg-opacity));
 }
 
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.bg-\[\#DAA520\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(218 165 32 / var(--tw-bg-opacity));
 }
 
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.bg-yellow-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 224 71 / var(--tw-bg-opacity));
+}
+
+.bg-yellow-600\/50 {
+  background-color: rgb(202 138 4 / 0.5);
+}
+
+.bg-yellow-600\/75 {
+  background-color: rgb(202 138 4 / 0.75);
 }
 
 .py-20 {
@@ -579,33 +578,18 @@ video {
   padding-bottom: 5rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .text-center {
   text-align: center;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1;
 }
 
 .text-4xl {
@@ -618,17 +602,37 @@ video {
   line-height: 1;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-semibold {
   font-weight: 600;
 }
 
-.font-bold {
-  font-weight: 700;
-}
-
-.text-orange-500 {
-  --tw-text-opacity: 1;
-  color: rgb(249 115 22 / var(--tw-text-opacity));
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .text-\[\#DAA520\] {
@@ -639,4 +643,9 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#016f32\] {
+  --tw-text-opacity: 1;
+  color: rgb(1 111 50 / var(--tw-text-opacity));
 }
