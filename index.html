@@ -12,17 +12,22 @@
     <link rel="stylesheet" href="univ.css">
 </head>
 
-<body class="img text-white">
-    <div class="flex flex-col">
-        <h1 class="text-[#DAA520] jolly font-base text-9xl text-center py-20">BlackJack</h1>
-
+<body>
+    <div class="flex flex-col img text-white">
+        <div class="text-[#DAA520] jolly font-base text-9xl text-center my-32">
+            <h1>BlackJack</h1>
+        </div>
         <div class="flex flex-col gap-8 font-semibold text-4xl justify-center items-center">
             <p id="message-el">Want to play a round?</p>
-            <p>Cards:</p>
-            <p>Sum:</p>
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
             <button class="mt-3 jolly text-5xl tracking-wider text-[#016f32] py-1 px-5 rounded-lg bg-[#DAA520]"
                 onclick="startGame()">
                 Start Game
+            </button>
+            <button class="mt-3 jolly text-5xl tracking-wider text-[#016f32] py-1 px-5 rounded-lg bg-[#DAA520]"
+                onclick="newCard()">
+                New Card
             </button>
         </div>
     </div>
