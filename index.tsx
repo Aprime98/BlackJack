@@ -1,22 +1,45 @@
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-let cards = [firstCard, secondCard]; // Array - ordered list of items
-let sum = firstCard + secondCard;
+
+let player ={
+  name : "Charles Mwangi",
+  chips : 200
+}
+let cards = [] // Array - ordered list of items
+let sum = 0
 let hasBlackJack = false;
-let isAlive = true;
+let isStarted = false;
+let isAlive = false;
 let message = "";
 let messageEl = document.getElementById("message-el");
 let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
+let playerEl = document.getElementById("player-el")
+playerEl.textContent = player.name + ": $" + player.chips
 
 // Create a function, getRandomCard()
 function getRandomCard() {
   let randomNo = Math.floor(Math.random() * 13) + 1;
-  return randomNo;
+  if (randomNo === 1){
+    return 11
+  }
+  else if (randomNo > 10){
+    return 10
+  }else{
+    return randomNo;
+  }
+  
 }
 
 function startGame() {
-  renderGame();
+  isAlive = true;
+  if (isStarted === false){
+    isStarted = true;
+    let firstCard = getRandomCard();
+    let secondCard = getRandomCard();
+  
+    cards = [firstCard, secondCard];
+    sum = firstCard + secondCard;
+    renderGame();
+  }
 }
 
 function renderGame() {
@@ -40,10 +63,11 @@ function renderGame() {
 }
 
 function newCard() {
-  let newCard = getRandomCard();
-  sum += newCard;
+  if (isAlive === true && hasBlackJack === false){
+    let newCard = getRandomCard();
+    sum += newCard;
   // add the new card to the "cards" array
-  cards.push(newCard);
-
-  renderGame();
+    cards.push(newCard);
+    renderGame();
+  } 
 }
